@@ -7,6 +7,7 @@ void run(int, int);
 int main() {
   //n=書的數量 m=動作次數
   int n, m;
+  cout << "請輸入總共的書量和動作數 [以空格分開] \n> ";
   //第一行 決定書量/動作數
   cin >> n >> m;
   
@@ -22,6 +23,7 @@ void run (int n, int m) {
 
   for (int i = 0; i < m; i++) {
     char d; //放入or拿出
+    cout << "請輸入動作和書量 [以空格分開, 放入(a)/拿出(b)]\n> ";
     cin >> d; //(輸入的第1值)
     
     //放入書
@@ -54,6 +56,7 @@ void run (int n, int m) {
   }
 
   //輸出
+  cout << ">> 拿出的書名依序是: ";
   for (int i = 0; i < k; i++) {
     cout << output[i];
     if (i != k - 1) {
